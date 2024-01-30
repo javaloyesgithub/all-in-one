@@ -9,5 +9,5 @@ sudo docker run \
 --env APACHE_IP_BINDING=0.0.0.0 \
 --volume nextcloud_aio_mastercontainer:/mnt/docker-aio-config \
 --volume /var/run/docker.sock:/var/run/docker.sock:ro \
---add-host=host.docker.internal:host-gateway
+--add-host=host.docker.internal:host-gateway nginx-frontend-madre \
 nextcloud/all-in-one:latest
