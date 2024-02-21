@@ -6,7 +6,7 @@ sudo docker run \
 --restart always \
 --publish 5081:8080 \
 --env APACHE_PORT=11000 \
---env APACHE_IP_BINDING=0.0.0.0 \
+--env APACHE_IP_BINDING=127.0.0.1 \
 --volume nextcloud_aio_mastercontainer:/mnt/docker-aio-config \
 --volume /var/run/docker.sock:/var/run/docker.sock:ro \
 --add-host=host.docker.internal:host-gateway \
